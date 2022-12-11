@@ -5,80 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Address Book Form</title>
-    <style>
-        body {
-            margin : 0;
-            height: 100%;
-        }
-
-        .header {
-            padding: 15px 0;
-            background: #ffffff;
-        }
-
-        .header-content {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            border: 0px solid blue;
-        }
-
-        .logo-content {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            width: 80%;
-            border: 0px solid blue;
-        }
-
-        .logo-content-img {
-            background: #42515F 0% 0% no-repeat padding-box;
-        }
-
-        .adbk-text {
-            text-align: left;
-            font: normal normal bold 22px/25px Montserrat;
-            font-family: "Montserrat" , sans-serif;
-            letter-spacing: 0px;
-            color: #008CFF;
-            text-transform: uppercase;
-        }
-
-        .adbk-book {
-            color: #42515F;
-        }
-
-        * { box-sizing: border-box;}
-
-        .form-head {
-            text-align: right;
-            font: normal normal normal 28px/37px Roboto;
-            letter-spacing: 0px;
-            color: #FFFFFF;
-            text-transform: uppercase;
-            opacity: 1;
-            margin-right: auto;
-            margin-left: auto;
-        }
-
-        .form-content {
-            background-color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 0px solid blue;
-        }
-
-        .form {
-            width: 65%;
-            padding: 20px 30px;
-            background: #579feb 0% 0% no-repeat padding-box;
-            box-shadow: 0px 3px 6px #00000029;
-            border: 1px solid #d5dce3;
-            border-radius: 8px;
-        }
-    </style>
+    <link rel="stylesheet" href="address-book-form-page.css">
 </head>
 <body>
     <header class="header-content header">
@@ -92,9 +19,53 @@
     </header>
     <div class="form-content">
         <form class="form" >
-            <div class="header-content">
-            <div class="form-head" >Person Address Form</div>
-            <a href="AddressBookFormPage.html" ><img src="cancel-icon.png" alt="" width="44px" height="44px"></a>
+            <div class="form-head-content">
+                <div class="form-head" >Person Address Form</div>
+                <a href="AddressBookFormPage.html" ><img src="cancel-icon.png" alt="" width="44px" height="44px"></a>
+            </div>
+
+            <div class="row-content">
+                <label for="flname" class="label text">Full Name</label><br>
+                <input class="input" type="text" id="flname" name="flname" rows="1" cols="25">
+            </div>
+
+            <div class="row-content">    
+                <label for="phnumber" class="label text">Phone Number</label><br>
+                <input class="input" type="tel" id="phnumber" name="phnumber">
+            </div>
+            
+            <div class="row-content">
+                <label for="address" class="label text">Address</label><br>
+                <textarea class="input" type="text" id="address" name="address" rows="" cols="10"></textarea>
+            </div>
+            
+            <div class="row-content">
+                <div class="row-content-one">
+                    <div class="row-content-two">
+                        <label for="city" class="label text">City</label><br>
+                        <select id="city" name="city">
+                            <option value="" selected disabled hidden>Select City</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Pune">Pune</option>
+                            <option value="Nagpur">Nagpur</option>
+                        </select>
+                    </div>
+    
+                    <div class="row-content-two">
+                        <label for="state" class="label text">State</label><br>
+                        <select  id="state" name="state">
+                            <option value="" selected disabled hidden>Select State</option>
+                            <option value="Maharashtra">Maharashtra</option>
+                            <option value="Kerala">Kerala</option>
+                            <option value="Aasam">Aasam</option>
+                        </select>
+                    </div>
+    
+                    <div class="row-content-two">
+                        <label for="zipcode" class="label text">Zipcode</label><br>
+                        <input type="tel" id="zipcode" name="zipcode">
+                    </div>
+                </div>
             </div>
         </form>
     </div>
