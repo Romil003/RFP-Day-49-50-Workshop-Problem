@@ -145,7 +145,7 @@ select {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-left: 110px;
+    padding-left: 50px;
     padding-right: 4px;
 }
 
@@ -158,9 +158,49 @@ textarea {
     resize: none;
 }
 
-error-output{
+error-output {
     font-size: 14px;
     font-style: italic;
     color: red;
     margin-top: 4px;
+}
+
+.add-reset-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.button{
+    font-size: 20px;
+    font-family: Roboto;
+    letter-spacing: 0px;
+    color: #42515f;
+    opacity: 1;
+    background: transparent;
+    border: none;
+    font-weight: 400;
+    min-width: 140px;
+    padding: 7px 7px;
+    border: 1px solid #707070;
+    cursor: pointer;
+}
+
+.add-Button{
+    margin-right: 30px;
+    border: 1px solid #969696;
+    border-radius: 5px;
+    background: #E2E2E2 0% 0% no-repeat padding-box;
+    background-color: #f5f5f5;
+    opacity: 1;
+}
+
+.reset-Button{
+    border: 1px solid #969696;
+    border-radius: 5px;
+    background: #E2E2E2 0% 0% no-repeat padding-box;
+    opacity: 1;
 }
